@@ -1,0 +1,26 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tropicalfishshop for Tokyo</h1>
+<%= image_tag '20220515_173800.jpg', :size=>"300x300" %>
+<%= image_tag '20220628.jpg', :size=>"300x300" %>
+
+<h2>東京の様々な熱帯魚店の情報を御提案致します。<br>
+    金魚をはじめ、エビ・ウーパールーパー等でご自宅を豊かな空間に<br>
+    水槽に必要な木材や機材等を購入する事で自分のオリジナルな水槽を作成する事が出来ます。</h2>
+
+<h3>更なる快適なご自宅空間を熱帯魚店の知識等で御提案致します。</h3>
+
+
+<div id="ids">
+  <% @ids.each do |id| %>
+    <%= render id %>
+    <p>
+      <%= link_to "Show this id", id %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New id", new_id_path %>
+
+
+  
